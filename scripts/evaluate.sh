@@ -3,25 +3,25 @@
 scripts=$(dirname "$0")
 base=$scripts/..
 
-data=$base/sampled_data
+data=$base/data/subset
 configs=$base/configs
 
 translations=$base/translations
 
 mkdir -p $translations
 
-src=?
-trg=?
+src="nl"
+trg="de"
 
 
-num_threads=4
+num_threads=8
 device=0
 
 # measure time
 
 SECONDS=0
 
-model_name=?
+model_name="transformer_bpe_4000"
 
 echo "###############################################################################"
 echo "model_name $model_name"
