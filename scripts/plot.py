@@ -26,19 +26,21 @@ print(df)
 # plot BLEU score for each beam size
 plt.figure(figsize=(10, 6))
 plt.plot("beam size", "score", marker="o", data=df)
-plt.grid(axis = 'x')
+plt.grid(axis = "x")
 
-plt.xlabel('Beam size')
-plt.ylabel('BLEU score')
+plt.title("Translation Quality by Beam Size")
+plt.xlabel("Beam Size")
+plt.ylabel("BLEU score")
 plt.legend()
 
 # plot compute time for each beams size
 plt.figure(figsize=(10, 6))
 plt.plot("beam size", "seconds", marker="o", data=df)
-plt.grid(axis = 'x')
+plt.grid(axis = "x")
 
-plt.xlabel('Beam size')
-plt.ylabel('BLEU score')
+plt.title("Compute Time by Beam Size")
+plt.xlabel("Beam Size")
+plt.ylabel("Compute Time")
 plt.legend()
 
 plt.show()
