@@ -2,6 +2,10 @@
 
 ## Instructions for custom scripts
 
+### Installation
+
+The `plot.py` script uses `pandas`and `matplotlib`, make sure to install them before running the script.
+
 ### Training
 
 - After downloading the IWLST 2017 data, run `sub_sample_data.sh` to create a subset of 100k sentences in `data/subset/`
@@ -11,3 +15,4 @@
 ### Testing
 
 - Run `evaluate_beam.sh` to run beam search experiments for beam sizes 1 2 4 8 10 12 20 30 50 and 100 with the BPE4k model. This writes a config for each beam size to the `configs` folder and writes sacrebleu results and compute times to a `translations` subfolder.
+- Run the python script `plot.py` to produce the plots from the beam size experiments.
